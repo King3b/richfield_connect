@@ -34,6 +34,7 @@ The platform is designed as an academic social networking system where students 
 ## ✨ Features
 
 ### ✅ User Registration
+
 - Form validation using JavaScript
 - Inline error messages
 - Password validation
@@ -41,21 +42,25 @@ The platform is designed as an academic social networking system where students 
 - Student number validation
 
 ### ✅ Dynamic Profile System
+
 - User data stored in localStorage
 - Automatic profile population
 - Live profile preview using jQuery
 
 ### ✅ Interactive Feed
+
 - Create posts dynamically
 - Like button functionality
 - Delete posts with confirmation
 - Date and time stamps
 
 ### ✅ Data Persistence
+
 - Posts saved in localStorage
 - Data remains after page refresh
 
 ### ✅ jQuery UI Enhancements
+
 - Fade-in animations
 - Hover effects
 - Slide toggles
@@ -66,6 +71,7 @@ The platform is designed as an academic social networking system where students 
 ## 📱 Responsive Design
 
 The website is fully responsive and adapts to:
+
 - Desktop
 - Tablet
 - Mobile devices
