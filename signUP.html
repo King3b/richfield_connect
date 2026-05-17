@@ -10,10 +10,12 @@
       <img src="" alt="school_logo" />
       <h1>Richfield connect</h1>
       <nav>
-        <a href="Home.html"><li>Home</li></a>
-        <a href="About.html"><li>About</li></a>
-        <a href="Signup.html"><li>Sign up</li></a>
-        <a href="Feed.html"><li>Feed</li></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -42,14 +44,19 @@
         </div>
       </section>
       <section class="signup">
-        <form action="Profile.html" method="get">
+        <form id="signup-form" action="Profile.html" method="get">
           <img src="" alt="profile picture" />
           <h3>sign up</h3>
-          <p>Create your profile to get started!</p>
-          <input type="text" placeholder="Name" required />
-          <input type="text" placeholder="Surname" required />
-          <input type="email" placeholder="Email" required />
-          <select name="Campuses" id="campus">
+          <p>Create your profile to get started!</p><br>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Name" required /><br>
+
+          <label for="surname">Surname</label>
+          <input type="text" id="surname" placeholder="Surname" required /><br>
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" required /><br>
+          <label for="campus">Campus</label>
+          
             <option value="">Select a campus</option>
             <option value="campus1">Bryanston Campus</option>
             <option value="campus2">Cape Town Campus</option>
@@ -59,28 +66,93 @@
             <option value="campus6">Newtown Junction Campus</option>
             <option value="campus7">Polokwane Campus</option>
             <option value="campus8">Pretoria Campus</option>
-          </select>
+          </select><br>
           <select name="gender" id="gender">
             <option value="">Select Gender</option>
             <option value="male">Male</option>
             <option value="female">Female</option>
             <option value="other">Other</option>
-          </select>
+          </select><br>
           <input
-            type="text"
+            type="number"
             placeholder="Student ID"
             required
             minlength="8"
             maxlength="8"
-          />
-          <input type="password" placeholder="Password" required />
-          <input type="password" placeholder="Confirm Password" required />
-          <button type="submit">create account</button>
+          /><br>
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          /> <br>
+          <label for="confirm_password">Confirm Password</label>
+          <input
+            type="password"
+            id="confirm_password"
+            placeholder="Confirm Password"
+            required
+          /> <br>
+          <button href="#signup_2">next</button> <br>
           <p class="login">
             Already have an account? <a href="logIn.html">Login here</a>
           </p>
         </form>
+        <form id="signup_2">
+          <label for="name_2">Name</label>
+          <input type="text" id="name_2" placeholder="Name" required /> <br>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="@username" required /> <br>
+          <hr>
+          
+          <div class="hobbies_edit">
+            <h4>Hobbies</h4>
+            <input type="text" placeholder="Add a hobby" />
+            <button type="button">Add Hobby</button>
+            <ul>
+              <li>Hobby 1 <button id="remove">Remove</button></li>
+              <li>Hobby 2 <button id="remove">Remove</button></li>
+              <li>Hobby 3 <button id="remove">Remove</button></li>
+            </ul>
+          </div> 
+          <div class="skills_edit">
+            <h4>Skills</h4>
+            <input type="text" placeholder="Add a skill" />
+            <button type="button">Add Skill</button>
+            <ul>
+              <li>Skill 1 <button id="remove">Remove</button></li>
+              <li>Skill 2 <button id="remove">Remove</button></li>
+              <li>Skill 3 <button id="remove">Remove</button></li>
+            </ul>
+          </div>
+          <div class="goals_edit">
+            <h4>Goals</h4>
+            <input type="text" placeholder="Add a goal" />
+            <button type="button">Add Goal</button>
+            <ul>
+              <li>Goal 1 <button id="remove">Remove</button></li>
+              <li>Goal 2 <button id="remove">Remove</button></li>
+              <li>Goal 3 <button id="remove">Remove</button></li>
+            </ul>
+          </div>
+          <div class="academic_edit">
+            <h4>Academic Information</h4>
+            <button type="button">Add Achievements</button>
+            <ul>
+              <li>Achievement 1 <button id="remove">Remove</button></li>
+              <li>Achievement 2 <button id="remove">Remove</button></li>
+              <li>Achievement 3 <button id="remove">Remove</button></li>
+            </ul>
+          </div>
+
+          <label for="bio">Bio</label>
+          <textarea id="bio" placeholder="Bio"></textarea> <br>
+          <button href="#signup-form" id="back-btn">Back</button>
+          <button type="submit">create account</button>
+        </form>
       </section>
+
       <section class="reasons">
         <ul>
           <li>
@@ -138,10 +210,12 @@
     <footer>
       <img src="" alt="school_logo" />
       <nav class="Fnaves">
-        <a href="Home.html"><li>Home</li></a>
-        <a href="About.html"><li>About</li></a>
-        <a href="Signup.html"><li>Sign up</li></a>
-        <a href="Feed.html"><li>Feed</li></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
       </nav>
       <div>
         <li>Help center</li>

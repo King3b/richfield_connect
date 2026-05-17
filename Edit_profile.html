@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richfield Connect / Edit Profile</title>
+  </head>
+  <body>
+    <header>
+      <img src="" alt="school_logo" />
+      <h1>Richfield connect</h1>
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="edit-profile">
+        <h2>Edit Profile</h2>
+        <form action="Profile.html" method="get">
+          <div class="profile-picture">
+            <h4>Current Profile Picture</h4>
+            <img src="" alt="current profile picture" />
+            <input type="file" accept="image/*" />
+            <h4>Current Banner</h4>
+            <img src="" alt="current banner" />
+            <input type="file" accept="image/*" />
+          </div>
+          <div class="profile-info">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" required /> <br />
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="@username" required />
+            <br />
+            <label for="bio">Bio</label>
+            <textarea id="bio" placeholder="Bio"></textarea>
+          </div>
+          <div class="contact_edit">
+            <h4>Contact Information</h4>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Email" required />
+            <br />
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="Phone Number" /> <br />
+            <label for="linkedin">LinkedIn Profile</label>
+            <input type="text" id="linkedin" placeholder="LinkedIn Profile" />
+            <br />
+            <label for="github">GitHub Profile</label>
+            <input type="text" id="github" placeholder="GitHub Profile" />
+            <br />
+          </div>
+          <div class="hobbies_edit">
+            <h4>Hobbies</h4>
+            <input type="text" placeholder="Add a hobby" />
+            <button type="button">Add Hobby</button>
+            <ul>
+              <li>Hobby 1 <button type="button">Remove</button></li>
+              <li>Hobby 2 <button type="button">Remove</button></li>
+              <li>Hobby 3 <button type="button">Remove</button></li>
+            </ul>
+          </div>
+          <div class="skills_edit">
+            <h4>Skills</h4>
+            <input type="text" placeholder="Add a skill" />
+            <button type="button">Add Skill</button>
+            <ul>
+              <li>Skill 1 <button type="button">Remove</button></li>
+              <li>Skill 2 <button type="button">Remove</button></li>
+              <li>Skill 3 <button type="button">Remove</button></li>
+            </ul>
+          </div>
+          <div class="goals_edit">
+            <h4>Goals</h4>
+            <input type="text" placeholder="Add a goal" />
+            <button type="button">Add Goal</button>
+            <ul>
+              <li>Goal 1 <button type="button">Remove</button></li>
+              <li>Goal 2 <button type="button">Remove</button></li>
+              <li>Goal 3 <button type="button">Remove</button></li>
+            </ul>
+          </div>
+          <div class="academic_edit">
+            <h4>Academic Information</h4>
+            <button type="button">Add Achievements</button>
+            <ul>
+              <li>Achievement 1 <button type="button">Remove</button></li>
+              <li>Achievement 2 <button type="button">Remove</button></li>
+              <li>Achievement 3 <button type="button">Remove</button></li>
+            </ul>
+          </div>
+          <button type="submit">Save Changes</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <img src="" alt="school_logo" />
+      <nav class="Fnaves">
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
+      </nav>
+      <div>
+        <ul>
+          <li><a href="Help.html">Help center</a></li>
+          <li><a href="Contact.html">Connect us</a></li>
+          <li><a href="Privacy.html">Privacy policy</a></li>
+          <li><a href="Terms.html">Terms of use</a></li>
+        </ul>
+      </div>
+      <p>&copy; 2024 Richfield Connect. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

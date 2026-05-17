@@ -7,56 +7,146 @@
   </head>
   <body>
     <header>
-      <img src="" alt="school_logo" />+
+      <img src="" alt="school_logo" />
       <h1>Richfield connect</h1>
       <nav>
-        <li><a href="Home.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="Signup.html">Sign up</a></li>
-        <li><a href="Feed.html">Feed</a></li>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
       </nav>
     </header>
+    <article class="social_links">
+      <ul class="social_links">
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Feed.html">Feed</a></li>
+        <li><a href="Chat.html">Chat</a></li>
+        <li><a href="Profile.html">Profile</a></li>
+        <li><a href="SchoolResources.html">School Resources</a></li>
+        <li><a href="Edit_Profile.html">Edit Profile</a></li>
+      </ul>
+    </article>
+    <article class="groups">
+      <h2>Groups</h2>
+      <div class="group_search">
+        <input type="text" placeholder="Search groups" />
+        <button type="submit">Search</button>
+      </div>
+      <div class="group_categories">
+        <button type="button">Academic</button>
+        <button type="button">Clubs</button>
+        <button type="button">Sports</button>
+        <button type="button">Arts</button>
+        <button type="button">Social</button>
+      </div>
+      <div class="group">
+        <img src="" alt="group picture" />
+        <h4><a href="#">Math 511 Study Group</a></h4>
+        <p>
+          Group description goes here. This is a brief overview of the group.
+        </p>
+      </div>
+      <div class="group">
+        <img src="" alt="group picture" />
+        <h4><a href="#">Computer Science Club</a></h4>
+        <p>
+          Group description goes here. This is a brief overview of the group.
+        </p>
+      </div>
+      <div class="group">
+        <img src="" alt="group picture" />
+        <h4><a href="#">Literature Enthusiasts</a></h4>
+        <p>
+          Group description goes here. This is a brief overview of the group.
+        </p>
+      </div>
+    </article>
     <main>
       <section class="feed">
         <h2>Feed</h2>
-        <p>
-          Stay updated with the latest news, events, and discussions happening
-          within the Richfield Connect community. Share your thoughts, ask
-          questions, and engage with your peers in real-time.
-        </p>
         <div class="post">
-          <img src="" alt="user profile picture" />
-          <h5>Jane Smith</h5>
-          <p>Computer Science Major | Class of 2023</p>
-          <p>
-            Just aced my midterm exam! Feeling great about my progress this
-            semester.
-          </p>
+          <h5 class="cTopic">Post topic</h5>
+          <p class="cUser">username</p>
+          <p class="cTime">time ago</p>
+          <p class="cMsg">This is the content of the post.</p>
+          <img src="" alt="profile picture" />
+          <span class="like-count">10 likes</span>
+          <button class="like-btn">Like</button>
+          <button class="comment-btn">Comment</button>
+          <div class="comment_user">
+            <textarea
+              name="comment"
+              id="user_comment"
+              placeholder="Write a comment..."
+            ></textarea>
+            <button type="submit">post</button>
+          </div>
+          <div class="comments">
+            <div class="comment">
+              <p class="cUser">commenter username</p>
+              <p class="cTime">time ago</p>
+              <p class="cMsg">This's the content of the comment.</p>
+              <button class="like-btn">like</button>
+              <button class="reply-btn">reply</button>
+            </div>
+          </div>
         </div>
         <div class="post">
-          <img src="" alt="user profile picture" />
-          <h5>Michael Johnson</h5>
-          <p>Biology Major | Class of 2024</p>
-          <p>
-            Looking for study partners for our upcoming biology exam. Anyone
-            interested?
-          </p>
+          <h5 class="cTopic">Post topic</h5>
+          <p class="cUser">username</p>
+          <p class="cTime">time ago</p>
+          <p class="cMsg">This is the content of the post.</p>
+          <img src="" alt="profile picture" />
+          <span class="like-count">10 likes</span>
+          <button class="like-btn">Like</button>
+          <button class="comment-btn">Comment</button>
         </div>
+        <div class="post">
+          <h5 class="cTopic">Post topic</h5>
+          <p class="cUser">username</p>
+          <p class="cTime">time ago</p>
+          <p class="cMsg">This is the content of the post.</p>
+          <img src="" alt="profile picture" />
+          <span class="like-count">10 likes</span>
+          <button class="like-btn">Like</button>
+          <button class="comment-btn">Comment</button>
+        </div>
+      </section>
+      <section class="create_Post">
+        <h2>Post something</h2>
+        <form id="post-form" action="#" method="post">
+          <input type="text" placeholder="Post topic" required />
+          <textarea
+            name="post_content"
+            id="post_content"
+            placeholder="What's on your mind?"
+            required
+          ></textarea>
+          <input type="file" accept="image/*" />
+          <button type="button">gifs</button>
+          <button type="submit">Post</button>
+        </form>
       </section>
     </main>
     <footer>
       <img src="" alt="school_logo" />
       <nav class="Fnaves">
-        <a href="Home.html"><li>Home</li></a>
-        <a href="About.html"><li>About</li></a>
-        <a href="Signup.html"><li>Sign up</li></a>
-        <a href="Feed.html"><li>Feed</li></a>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="Signup.html">Sign up</a></li>
+          <li><a href="Feed.html">Feed</a></li>
+        </ul>
       </nav>
       <div>
-        <li>Help center</li>
-        <li>Connect us</li>
-        <li>Privacy policy</li>
-        <li>Terms of use</li>
+        <ul>
+          <li><a href="Help.html">Help center</a></li>
+          <li><a href="Contact.html">Connect us</a></li>
+          <li><a href="Privacy.html">Privacy policy</a></li>
+          <li><a href="Terms.html">Terms of use</a></li>
+        </ul>
       </div>
     </footer>
   </body>
